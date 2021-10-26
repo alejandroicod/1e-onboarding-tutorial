@@ -22,7 +22,8 @@ const setLocale = function (language) {
 };
 
 const getLocale = function () {
-  return localStorage.getItem("locale") || DEFAULT_LANGUAGE;
+  let lang = localStorage.getItem("locale") || DEFAULT_LANGUAGE;
+  return Terms[lang] ? lang : DEFAULT_LANGUAGE;
 };
 
 const getLocales = function () {

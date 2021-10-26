@@ -24,7 +24,7 @@ class PageHeaderToolbar extends React.Component {
             {/* <LangPicker /> */}
           </div>
         </div>
-        <CookieConsent />
+        {/* <CookieConsent /> */}
       </div>
     );
   }

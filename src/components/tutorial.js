@@ -33,9 +33,8 @@ class Tutorial extends React.Component {
   renderHelpButton() {
     const email = 'support@1e.com';
     const subject = 'Tachyon Welcome - Onboarding help request';
-    const body = `User has requested help from step ${this.getPage()} or ${
-      TutorialPages.length
-    }.`;
+    const body = `User has requested help from step ${this.getPage()} of ${TutorialPages.length
+      }.`;
     return (
       <a
         className="button"
@@ -66,22 +65,22 @@ class Tutorial extends React.Component {
           <div className="content-wrapper">
             <div className="flex-container">
               <div className="flex-box">{this.renderHelpButton()}</div>
-              <div className="flex-box content-right">
-                <a
+              <div className="content-right">
+                {/* <a
                   className={`text-button ${!page ? 'disabled' : ''}`}
                   disabled={!page ? 'disabled' : ''}
                   href="#"
                   onClick={this.restart.bind(this)}
                 >
                   Start over
-                </a>
+                </a> */}
                 <a
                   className="button"
                   disabled={page <= 0}
                   tabIndex="0"
                   onClick={this.prevPage.bind(this)}
                 >
-                  &lt; Previous
+                  &lt; Back
                 </a>
                 <a
                   className="button primary"

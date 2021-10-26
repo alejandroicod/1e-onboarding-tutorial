@@ -3,11 +3,7 @@ import React from 'react';
 class ProgressBar extends React.Component {
   render() {
     const { totalSteps, currentStep } = this.props;
-    console.log(
-      totalSteps,
-      parseInt(currentStep),
-      parseInt(currentStep) / parseInt(totalSteps)
-    );
+
     return (
       <div className="progress-bar">
         <div
