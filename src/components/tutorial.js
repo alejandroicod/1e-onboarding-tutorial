@@ -84,6 +84,7 @@ class Tutorial extends React.Component {
                   disabled={page <= 0}
                   tabIndex="0"
                   onClick={this.prevPage.bind(this)}
+                  onTouchEnd={this.prevPage.bind(this)}
                 >
                   &lt; Back
                 </a>
@@ -92,6 +93,7 @@ class Tutorial extends React.Component {
                   disabled={page >= TutorialPages.length - 1}
                   tabIndex="0"
                   onClick={this.nextPage.bind(this)}
+                  onTouchEnd={this.nextPage.bind(this)}
                 >
                   Next &gt;
                 </a>
