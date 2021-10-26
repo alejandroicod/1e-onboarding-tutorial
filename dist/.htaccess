@@ -1,0 +1,9 @@
+  
+  # Redirect HTTP to HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^(.*)$ https://percentify.codenify.es%{REQUEST_URI} [L,R=301]
+  
+  <Files apple-app-site-association>
+  ForceType application/json
+  </Files>

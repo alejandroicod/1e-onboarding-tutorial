@@ -1,0 +1,22 @@
+
+.animate-fade-in
+.animate-fade-in-delayed
+  position relative 
+  opacity 0
+
+.animate-fade-in
+  animation fadeIn normal 1s 1s forwards ease-out
+
+.animate-fade-in-delayed
+  animation fadeIn normal 1s 1.5s forwards ease-out
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    top: 40px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}

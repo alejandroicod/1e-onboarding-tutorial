@@ -1,0 +1,36 @@
+.menu
+  ul
+    padding 0
+    margin 0
+
+    a
+      text-decoration none
+
+.mobile-menu-container
+  background $back
+  padding-top $spacer * 2
+  border-top 1px solid $mid
+  position fixed
+  top $header-toolbar-height
+  left 0
+  width 100%
+  z-index 2
+  box-shadow 0 $spacer $spacer rgba(0, 0, 0, 0.4)
+  border-bottom 1px solid $mid
+
+  li
+    list-style none
+    margin-bottom 1px
+
+    a
+      display block
+      width 100%
+      padding $spacer * 2
+
+      &:hover
+        background $hover !important
+        color $back
+
+      &.selected
+        background $selected
+        color $back

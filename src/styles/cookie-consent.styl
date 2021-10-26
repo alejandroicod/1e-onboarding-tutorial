@@ -1,0 +1,31 @@
+.CookieConsent
+  max-width 800px
+  left 50% !important
+  transform translateX(-50%)
+  background rgba(0, 0, 0, 0.8) !important
+  border-top-right-radius $spacer
+  border-top-left-radius $spacer
+
+  span
+    margin-left $spacer
+    font-size 11px
+
+    a 
+      color #888888
+
+  button 
+    background $secondary !important
+
+@media (max-width: $xs-device)
+
+  .CookieConsent
+    left 0 !important
+    transform translateX(0)
+    border-radius 0
+
+    & > div
+      width 100%
+      text-align center
+
+      button
+        margin-top 0 !important
