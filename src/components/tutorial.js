@@ -30,6 +30,11 @@ class Tutorial extends React.Component {
       document.location = `/#/tutorial/${newPage}`;
   }
 
+  componentDidUpdate() {
+    console.log("Scroll to top");
+    window.scrollTo(0, 0);
+  }
+
   renderHelpButton() {
     const email = 'support@1e.com';
     const subject = 'Tachyon Welcome - Onboarding help request';

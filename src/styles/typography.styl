@@ -1,13 +1,11 @@
 // Typography
-
 @font-face
   font-family 'Open Sans'
   font-style normal
-  src url(../fonts/OpenSans-Regular.ttf) format('truetype')
+  src url('../fonts/OpenSans-Regular.ttf') format('truetype')
 
-*
-body
-  font-family 'Open Sans', sans-serif;
+*, body
+  font-family 'Open Sans', sans-serif
   font-size 14px
   line-height 1.8em
 
@@ -18,29 +16,28 @@ body
 body
   font-size $font-size
 
-
 h1, h2, h3, h4, h5
-  margin-top $spacer * 3
-  margin-bottom $spacer * 2
+  margin-top: $spacer * 3
+  margin-bottom: $spacer * 2
   font-weight 500
 
 h2
-  font-size $spacer * 4
-  line-height $spacer * 5
+  font-size: $spacer * 4
+  line-height: $spacer * 5
 
 h3
-  font-size $spacer * 3
-  line-height $spacer * 4
+  font-size: $spacer * 3
+  line-height: $spacer * 4
 
 h4
-  font-size $spacer * 2
-  line-height $spacer * 3
+  font-size: $spacer * 2
+  line-height: $spacer * 3
 
 h5
-  font-size $spacer * 1.5
-  line-height $spacer * 2
+  font-size: $spacer * 1.5
+  line-height: $spacer * 2
 
-strong 
+strong
   font-weight bold
 
 a
@@ -54,9 +51,6 @@ a
     color $secondary
     text-decoration underlined
 
-
 p
   margin-top 0
-  margin-bottom $spacer * 2
-
-
+  margin-bottom: $spacer * 2
