@@ -84,7 +84,6 @@ class Tutorial extends React.Component {
                   disabled={page <= 0}
                   tabIndex="0"
                   onClick={this.prevPage.bind(this)}
-                  href="#"
                 >
                   &lt; Back
                 </a>
@@ -92,7 +91,6 @@ class Tutorial extends React.Component {
                   className="button primary"
                   disabled={page >= TutorialPages.length - 1}
                   tabIndex="0"
-                  href="#"
                   onClick={this.nextPage.bind(this)}
                 >
                   Next &gt;
