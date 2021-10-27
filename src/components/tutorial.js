@@ -55,13 +55,35 @@ class Tutorial extends React.Component {
     document.location = `/#/tutorial`;
   }
 
+  handleTouchStart(event) {
+    this.touchXStart = event.touches[0].clientX;
+    this.touchScreenX = event.touches[0].screenX;
+  }
+
+
+  handleTouchMove(event) {
+    this.touchXEnd = event.touches[0].clientX;
+  }
+
+
+  handleTouchEnd() {
+    let swipe = this.touchXEnd - this.touchXStart
+    swipe = swipe / this.touchScreenX
+    if (Math.abs(swipe) < 0.3) return
+    if (swipe < 0) return this.nextPage()
+    return this.prevPage()
+  }
+
   render() {
     let { page, user, company } = this.props;
     page = page || 0;
 
     return (
       <Fragment>
-        <main className="tutorial" {...this.props}>
+        <main className="tutorial" {...this.props}
+          onTouchStart={touchStartEvent => this.handleTouchStart(touchStartEvent)}
+          onTouchMove={touchMoveEvent => this.handleTouchMove(touchMoveEvent)}
+          onTouchEnd={() => this.handleTouchEnd()}>
           <div className="content-wrapper">
             {TutorialPages[page]({ user, company, step: page })}
           </div>
