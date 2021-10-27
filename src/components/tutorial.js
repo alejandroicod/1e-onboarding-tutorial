@@ -61,12 +61,12 @@ class Tutorial extends React.Component {
 
     return (
       <Fragment>
-        <div className="tutorial" {...this.props}>
+        <main className="tutorial" {...this.props}>
           <div className="content-wrapper">
             {TutorialPages[page]({ user, company, step: page })}
           </div>
-        </div>
-        <div className="footer">
+        </main>
+        <footer className="footer">
           <div className="content-wrapper">
             <div className="flex-container">
               <div className="flex-box">{this.renderHelpButton()}</div>
@@ -84,6 +84,7 @@ class Tutorial extends React.Component {
                   disabled={page <= 0}
                   tabIndex="0"
                   onClick={this.prevPage.bind(this)}
+                  href="#"
                 >
                   &lt; Back
                 </a>
@@ -91,6 +92,7 @@ class Tutorial extends React.Component {
                   className="button primary"
                   disabled={page >= TutorialPages.length - 1}
                   tabIndex="0"
+                  href="#"
                   onClick={this.nextPage.bind(this)}
                 >
                   Next &gt;
@@ -98,7 +100,7 @@ class Tutorial extends React.Component {
               </div>
             </div>
           </div>
-        </div>
+        </footer>
       </Fragment>
     );
   }
