@@ -6,6 +6,13 @@ export default function ({ user, company, page }) {
   return (
     <Fragment>
       <h2>Hi {user || 'there'},</h2>
+      <Tip>
+        Welcome to the tutorial! I am going to be your assistant during this
+        process. I might suggest you tips or explanations along the process for
+        a better understanding. Remember that if you ever need more help, you
+        can use the <strong>Need Help?</strong> button at the bottom left of the
+        screen.
+      </Tip>
       <p>
         This tutorial will guide you through the onboarding process of your
         device that will transform it into a <strong>Corporate Device</strong>,
@@ -16,12 +23,7 @@ export default function ({ user, company, page }) {
         <img src={OnboardingImg} alt="New laptop to be onboarded." />
         <figcaption>New laptop to be onboarded.</figcaption>
       </figure>
-      <Tip>
-        Hi, I am going to be your assistant during this process. I might suggest
-        you tips or explanations along the process for a better understanding.
-        Remember that if you ever need more help, you can use the{' '}
-        <strong>Need Help?</strong> button at the bottom left of the screen.
-      </Tip>
+
       <p>
         You must have landed on this page because you have received an
         onboarding email. That's great!
