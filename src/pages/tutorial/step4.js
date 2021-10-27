@@ -21,34 +21,17 @@ export default function ({ user, company, step }) {
           I know it might sound confusing but we will configure your laptop for
           your organization later in the process.
         </Tip>
-
         <figure>
           <img src={PersonalUseImg} alt="Select region" />
-          <figcaption>Select region screen.</figcaption>
+          <figcaption>Set up for personal use.</figcaption>
         </figure>
         <li>
-          Please select your keyboard layout from the list and press{' '}
-          <strong>Yes</strong>.
+          On the following scree, click <strong>Offline account</strong> at the
+          bottom left.
         </li>
         <figure>
           <img src={OfflineAccountImg} alt="Select keyboard layout" />
-          <figcaption>Select your keyboard layout.</figcaption>
-        </figure>
-        <li>
-          Please select your keyboard layout from the list and press{' '}
-          <strong>Yes</strong>.
-        </li>
-        <figure>
-          <img src={TempUsernameImg} alt="Select keyboard layout" />
-          <figcaption>Select your keyboard layout.</figcaption>
-        </figure>
-        <li>
-          Please select your keyboard layout from the list and press{' '}
-          <strong>Yes</strong>.
-        </li>
-        <figure>
-          <img src={TempPasswordImg} alt="Select keyboard layout" />
-          <figcaption>Select your keyboard layout.</figcaption>
+          <figcaption>Set up using an offline account.</figcaption>
         </figure>
       </ul>
     </Fragment>
