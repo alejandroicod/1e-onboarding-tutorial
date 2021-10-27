@@ -31,22 +31,23 @@ class Tutorial extends React.Component {
   }
 
   componentDidUpdate() {
-    console.log("Scroll to top");
+    console.log('Scroll to top');
     window.scrollTo(0, 0);
   }
 
   renderHelpButton() {
     const email = 'support@1e.com';
     const subject = 'Tachyon Welcome - Onboarding help request';
-    const body = `User has requested help from step ${this.getPage()} of ${TutorialPages.length
-      }.`;
+    const body = `User has requested help from step ${this.getPage()} of ${
+      TutorialPages.length
+    }.`;
     return (
       <a
         className="button"
         tabIndex="0"
         href={`mailto:${email}?subject=${subject}&body=${body}`}
       >
-        Need help?
+        Need Help?
       </a>
     );
   }
@@ -60,18 +61,16 @@ class Tutorial extends React.Component {
     this.touchScreenX = event.touches[0].screenX;
   }
 
-
   handleTouchMove(event) {
     this.touchXEnd = event.touches[0].clientX;
   }
 
-
   handleTouchEnd() {
-    let swipe = this.touchXEnd - this.touchXStart
-    swipe = swipe / this.touchScreenX
-    if (Math.abs(swipe) < 0.3) return
-    if (swipe < 0) return this.nextPage()
-    return this.prevPage()
+    let swipe = this.touchXEnd - this.touchXStart;
+    swipe = swipe / this.touchScreenX;
+    if (Math.abs(swipe) < 0.3) return;
+    if (swipe < 0) return this.nextPage();
+    return this.prevPage();
   }
 
   render() {
@@ -80,10 +79,15 @@ class Tutorial extends React.Component {
 
     return (
       <Fragment>
-        <main className="tutorial" {...this.props}
-          onTouchStart={touchStartEvent => this.handleTouchStart(touchStartEvent)}
-          onTouchMove={touchMoveEvent => this.handleTouchMove(touchMoveEvent)}
-          onTouchEnd={() => this.handleTouchEnd()}>
+        <main
+          className="tutorial"
+          {...this.props}
+          onTouchStart={(touchStartEvent) =>
+            this.handleTouchStart(touchStartEvent)
+          }
+          onTouchMove={(touchMoveEvent) => this.handleTouchMove(touchMoveEvent)}
+          onTouchEnd={() => this.handleTouchEnd()}
+        >
           <div className="content-wrapper">
             {TutorialPages[page]({ user, company, step: page })}
           </div>
