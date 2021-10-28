@@ -38,7 +38,7 @@ export default function ({ user, company, page, totalSteps }) {
       <p>
         It is going to be a smooth process that will take up to a couple of
         hours but it will only require a few minutes of your time across{' '}
-        <strong>{totalSteps - 2} easy steps</strong>.
+        <strong>{totalSteps - 1} easy steps</strong>.
       </p>
 
       <p>

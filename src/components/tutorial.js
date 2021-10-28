@@ -38,7 +38,7 @@ class Tutorial extends React.Component {
   renderHelpButton() {
     const email = 'support@1e.com';
     const subject = 'Tachyon Welcome - Onboarding help request';
-    const body = `User has requested help from step ${this.getPage()} of ${
+    const body = `User has requested help from step ${this.getPage() + 1} of ${
       TutorialPages.length
     }.`;
     return (
