@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import SwitchOnImg from './switch-on.png';
-import WindowsLoadingImg from './windows-loading.png';
+import SwitchOnImg from './images/switch-on.png';
+import WindowsLoadingImg from './images/windows-loading.png';
 
 export default function ({ user, company, step }) {
   return (

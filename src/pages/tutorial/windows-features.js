@@ -1,10 +1,8 @@
 import React, { Fragment } from 'react';
 import Tip from '../../components/tip';
-import HistoryImg from './history.png';
-import CortanaImg from './cortana.png';
-import DesktopImg from './desktop.png';
-import TempUsernameImg from './temp-username.png';
-import TempPasswordImg from './temp-password.png';
+import HistoryImg from './images/history.png';
+import CortanaImg from './images/cortana.png';
+import DesktopImg from './images/desktop.png';
 
 export default function ({ user, company, step }) {
   return (

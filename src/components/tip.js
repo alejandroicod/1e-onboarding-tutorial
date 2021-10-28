@@ -1,5 +1,5 @@
 import React from 'react';
-import AdminAvatar from '../pages/tutorial/admin-avatar.png';
+import AdminAvatar from '../assets/admin-avatar.png';
 import BubbleTip from '../assets/bubble-tip.png';
 
 class Tip extends React.Component {

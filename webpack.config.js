@@ -5,7 +5,7 @@ const htmlPlugin = new HtmlWebPackPlugin({
   template: './src/index.html',
   filename: './index.html',
   favicon: './src/assets/tachyon-welcome-logo.svg',
-  title: 'Caching',
+  title: 'Tachyon Welcome',
 });
 
 module.exports = {

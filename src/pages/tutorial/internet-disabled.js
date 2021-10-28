@@ -1,12 +1,8 @@
 import React, { Fragment } from 'react';
 import Tip from '../../components/tip';
-import WifiListImg from './wifi-list.jpeg';
-import WifiOnImg from './wifi-on.jpeg';
-import WifiPasswordImg from './wifi-password.jpeg';
-import CortanaImg from './cortana.png';
-import DesktopImg from './desktop.png';
-import TempUsernameImg from './temp-username.png';
-import TempPasswordImg from './temp-password.png';
+import WifiListImg from './images/wifi-list.jpeg';
+import WifiOnImg from './images/wifi-on.jpeg';
+import WifiPasswordImg from './images/wifi-password.jpeg';
 
 export default function ({ user, company, step }) {
   return (

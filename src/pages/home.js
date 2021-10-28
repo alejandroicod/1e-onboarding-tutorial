@@ -24,6 +24,7 @@ class HomePage extends React.Component {
           page={page}
           user={query.get('user')}
           company={query.get('company')}
+          totalSteps={totalPages}
         />
       </Fragment>
     );

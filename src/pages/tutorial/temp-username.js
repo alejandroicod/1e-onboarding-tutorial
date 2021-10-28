@@ -1,9 +1,7 @@
 import React, { Fragment } from 'react';
 import Tip from '../../components/tip';
-import PersonalUseImg from './personal-use.png';
-import OfflineAccountImg from './offline-account.png';
-import TempUsernameImg from './temp-username.png';
-import TempPasswordImg from './temp-password.png';
+import TempUsernameImg from './images/temp-username.png';
+import TempPasswordImg from './images/temp-password.png';
 
 export default function ({ user, company, step }) {
   return (

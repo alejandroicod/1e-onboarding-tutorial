@@ -74,7 +74,7 @@ class Tutorial extends React.Component {
   }
 
   render() {
-    let { page, user, company } = this.props;
+    let { page, user, company, totalSteps } = this.props;
     page = page || 0;
 
     return (
@@ -89,7 +89,7 @@ class Tutorial extends React.Component {
           onTouchEnd={() => this.handleTouchEnd()}
         >
           <div className="content-wrapper">
-            {TutorialPages[page]({ user, company, step: page })}
+            {TutorialPages[page]({ user, company, step: page, totalSteps })}
           </div>
         </main>
         <footer className="footer">

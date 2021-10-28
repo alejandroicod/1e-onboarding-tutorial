@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import SelectRegionImg from './select-region.png';
-import SelectKeyboardImg from './select-keyboard.png';
+import SelectRegionImg from './images/select-region.png';
+import SelectKeyboardImg from './images/select-keyboard.png';
 
 export default function ({ user, company, step }) {
   return (

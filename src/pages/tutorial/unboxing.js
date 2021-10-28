@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-import UnboxingNewLaptopImg from './unboxing-new-laptop.jpeg';
+import UnboxingNewLaptopImg from './images/unboxing-new-laptop.jpeg';
 
 export default function ({ user, company, step }) {
   return (
