@@ -31,7 +31,6 @@ class Tutorial extends React.Component {
   }
 
   componentDidUpdate() {
-    console.log('Scroll to top');
     window.scrollTo(0, 0);
   }
 
@@ -68,13 +67,13 @@ class Tutorial extends React.Component {
   handleTouchEnd() {
     let swipe = this.touchXEnd - this.touchXStart;
     swipe = swipe / this.touchScreenX;
-    if (Math.abs(swipe) < 0.3) return;
+    if (Math.abs(swipe) < 0.5) return;
     if (swipe < 0) return this.nextPage();
     return this.prevPage();
   }
 
   render() {
-    let { page, user, company, totalSteps } = this.props;
+    let { page, user, company, totalsteps } = this.props;
     page = page || 0;
 
     return (
@@ -89,7 +88,12 @@ class Tutorial extends React.Component {
           onTouchEnd={() => this.handleTouchEnd()}
         >
           <div className="content-wrapper">
-            {TutorialPages[page]({ user, company, step: page, totalSteps })}
+            {TutorialPages[page]({
+              user,
+              company,
+              step: page,
+              totalSteps: totalsteps,
+            })}
           </div>
         </main>
         <footer className="footer">
