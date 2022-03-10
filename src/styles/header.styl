@@ -1,34 +1,31 @@
 .page-header-toolbar
   background $back
-  height $spacer * 8
-  position fixed
-  top 0
+  height: $spacer * 8
   border-bottom 1px solid $mid
   width 100%
   z-index 2
 
-  .brand 
+  .brand
     height $header-toolbar-height
-    width $spacer * 30
+    width: $spacer * 30
     align-items center
     display flex
     flex 1
     justify-content center
 
-    a 
-      font-size $spacer * 2.5
+    a
+      font-size: $spacer * 2.5
       color $fore
       text-decoration none
-      height $spacer * 4
+      height: $spacer * 4
       display inline-block
 
       img
-        width $spacer * 4
+        width: $spacer * 4
         vertical-align bottom
 
       span
-        line-height $spacer * 4
-
+        line-height: $spacer * 4
 
   .menu-toggle-container
     display flex
