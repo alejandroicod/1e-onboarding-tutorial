@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 
+import ModalImage from "react-modal-image"
 import UnboxingNewLaptopImg from './images/unboxing-new-laptop.jpeg';
 
 export default function ({ user, company, step }) {
@@ -16,7 +17,7 @@ export default function ({ user, company, step }) {
       </ul>
       <ul>
         <figure>
-          <img src={UnboxingNewLaptopImg} alt="Unboxing new laptop" />
+          <ModalImage hideDownload small={UnboxingNewLaptopImg} large={UnboxingNewLaptopImg} alt="Unboxing new laptop." />
           <figcaption>Unboxing new laptop.</figcaption>
         </figure>
         <li>

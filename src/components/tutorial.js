@@ -37,9 +37,8 @@ class Tutorial extends React.Component {
   renderHelpButton() {
     const email = 'support@1e.com';
     const subject = 'Tachyon Welcome - Onboarding help request';
-    const body = `User has requested help from step ${this.getPage()} of ${
-      TutorialPages.length - 2
-    }.`;
+    const body = `User has requested help from step ${this.getPage()} of ${TutorialPages.length - 2
+      }.`;
     return (
       <a
         className="button"
@@ -65,11 +64,11 @@ class Tutorial extends React.Component {
   }
 
   handleTouchEnd() {
-    let swipe = this.touchXEnd - this.touchXStart;
-    swipe = swipe / this.touchScreenX;
-    if (Math.abs(swipe) < 0.5) return;
-    if (swipe < 0) return this.nextPage();
-    return this.prevPage();
+    // let swipe = this.touchXEnd - this.touchXStart;
+    // swipe = swipe / this.touchScreenX;
+    // if (Math.abs(swipe) < 0.5) return;
+    // if (swipe < 0) return this.nextPage();
+    // return this.prevPage();
   }
 
   render() {

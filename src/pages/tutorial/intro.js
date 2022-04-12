@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import Tip from '../../components/tip';
 import OnboardingImg from './images/welcome-pc.png';
+import ModalImage from "react-modal-image"
 
 export default function ({ user, company, page, totalSteps }) {
   return (
@@ -27,9 +28,15 @@ export default function ({ user, company, page, totalSteps }) {
         device. Excited?
       </p>
       <figure>
-        <img src={OnboardingImg} alt="New laptop to be onboarded." />
+        <ModalImage hideDownload small={OnboardingImg} large={OnboardingImg} alt="New laptop to be onboarded." />
         <figcaption>New laptop to be onboarded.</figcaption>
       </figure>
+      {/* <iframe src="https://player.vimeo.com/video/666821537?h=f6e7b144a4&color=F9690E&title=0&byline=0&portrait=0" width="640" height="443" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe> */}
+
+      <div className="video-responsive">
+        <iframe src="https://player.vimeo.com/video/666821537?h=f6e7b144a4&color=F9690E&title=0&byline=0&portrait=0" width="640" height="443" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
+      </div>
+
       <p>
         This process will transform your new laptop into a{' '}
         <strong>Corporate Device</strong>, managed by your employer, and with

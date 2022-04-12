@@ -1,34 +1,56 @@
 .tutorial
+    padding-bottom: $spacer * 12
 
-    padding-bottom $spacer * 12
+    .sc-bZQynM
+        z-index 2
 
     .step
         color $primary
         font-weight bold
-        margin-right $spacer * 2
+        margin-right: $spacer * 2
 
         &:after
-            content " -"
+            content ' -'
 
     figure
-        margin $spacer * 3 0
+        margin: $spacer * 3 0
+
         figcaption
             text-align center
             font-size 14px
-        img
+
+        & > img
             margin-bottom 0
             width 100%
             border 1px solid $mid
 
-    ul 
-        margin-left 0
-        padding-left $spacer * 3
+    .video-responsive
+        border 1px solid $mid
+        position relative
+        display block
+        overflow hidden
+        margin-bottom 16px
 
-        li 
-            margin-bottom $spacer * 2
+        &::before
+            display block
+            content ''
+            padding-top 56.25%
+
+        iframe
+            position absolute
+            top 0
+            bottom 0
+            left 0
+            width 100%
+            height 100%
+            border 0
+
+    ul
+        margin-left 0
+        padding-left: $spacer * 3
+
+        li
+            margin-bottom: $spacer * 2
 
         figure, .tip
-            margin-left $spacer * -3
-
-
-    
+            margin-left: $spacer * -3

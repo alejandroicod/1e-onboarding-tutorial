@@ -28,7 +28,10 @@
     "react": "^16.8.4",
     "react-cookie-consent": "^4.1.0",
     "react-dom": "^16.8.4",
+    "react-imagezoomable": "^1.1.4",
+    "react-inner-image-zoom": "^3.0.0",
     "react-intl": "^4.5.0",
+    "react-modal-image": "^2.5.0",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
     "react-twitter-embed": "^3.0.3"
